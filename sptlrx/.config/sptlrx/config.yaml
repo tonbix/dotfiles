@@ -1,0 +1,9 @@
+player: mpd
+
+mpd:
+  address: 127.0.0.1:6600
+  password: ""
+
+local:
+  folder: "~/Music/sorted"
+

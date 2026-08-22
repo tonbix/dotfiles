@@ -1,0 +1,14 @@
+[Unit]
+Description=rclone mount for grive-%i
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=notify
+ExecStartPre=/usr/bin/mkdir -p %h/grive-%i
+ExecStart=/usr/bin/rclone mount grive-%i: %h/grive-%i --vfs-cache-mode full
+ExecStop=/bin/fusermount -u %h/grive-%i
+Restart=on-failure
+
+[Install]
+WantedBy=default.target

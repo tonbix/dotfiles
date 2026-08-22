@@ -1,0 +1,25 @@
+# Environment & Secrets
+*.env
+.env
+*.key
+*token*
+*secret*
+*.pem
+id_rsa*
+id_ed25519*
+rclone.conf
+
+# Sessions & History
+*.session
+*.session-journal
+*history*
+
+# Logs & Caches
+*.log
+**/cache/
+rofi/.config/rofi/cache/
+
+# Shell state & Databases
+fish_variables
+*.db
+*.sqlite

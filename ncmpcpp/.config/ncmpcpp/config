@@ -1,0 +1,23 @@
+main_window_color = "white"
+header_window_color = "yellow"
+volume_color = "red"
+state_line_color = "yellow"
+state_flags_color = "red"
+statusbar_color = "white"
+
+progressbar_look = "---"
+progressbar_color = "black"
+progressbar_elapsed_color = "white"
+
+visualizer_data_source = "/tmp/mpd.fifo"
+visualizer_output_name = "fifo"
+visualizer_in_stereo = "yes"
+visualizer_type = "spectrum"
+visualizer_spectrum_smooth_look = "no"
+visualizer_look = "::"
+visualizer_color = "white,yellow,magenta,black"
+
+mpd_music_dir = "~/Music/sorted"
+
+store_lyrics_in_song_dir = "yes"
+fetch_lyrics_for_current_song_in_background = "no"

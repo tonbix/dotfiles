@@ -1,0 +1,17 @@
+:root {
+	--ytmusic-player-bar-background: rgba(0,0,0,.3) !important;
+	--ytmusic-nav-bar: rgba(0,0,0,.3) !important;
+}
+
+#nav-bar-background {
+	backdrop-filter: blur(20px) !important;
+}
+
+#player-bar-background {
+	backdrop-filter: blur(20px) !important;
+}
+
+* {
+	border: none !important;
+}
+

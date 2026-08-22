@@ -1,0 +1,39 @@
+======================================================
+               NEOVIM CONFIG CHEATSHEET
+======================================================
+[ GLOBAL ]
+<Space>        - Leader Key (The prefix key for custom commands)
+
+[ FILE EXPLORATION & SEARCHING ]
+Ctrl + f       - Open FZF (Quickly find files by name)
+Ctrl + t       - Toggle NERDTree (Open/Close the sidebar file explorer)
+
+[ DIAGNOSTICS (Errors & Warnings) ]
+<Space> + e    - Open Float (Show the error message under the cursor in a floating window)
+[d             - Go to Previous (Jump to the previous error/warning)
+]d             - Go to Next (Jump to the next error/warning)
+
+[ LSP (Code Intelligence) ]
+gd             - Go to Definition (Jump to where a function/variable is defined)
+K              - Hover (Show documentation for the function/variable under the cursor)
+<Space> + rn   - Rename (Safely rename a variable across the entire file)
+<Space> + ca   - Code Action (Show auto-fix suggestions from the LSP)
+
+[ AUTOCOMPLETION (CMP) ]
+Ctrl + n       - Select the next item in the completion menu
+Ctrl + p       - Select the previous item in the completion menu
+Ctrl + Space   - Force open the completion menu
+Enter          - Confirm the selected completion item
+
+[ INCREMENT / DECREMENT (Dial.nvim) ]
+Ctrl + a       - Increment a number, date, or toggle a boolean (false -> true)
+Ctrl + x       - Decrement a number, date, or toggle a boolean (true -> false)
+g + Ctrl + a   - Cascade increment (Useful when selecting a column of numbers in Visual mode)
+g + Ctrl + x   - Cascade decrement
+
+[ TMUX / SPLIT NAVIGATION ]
+Ctrl + h       - Move to the left split (or Tmux pane)
+Ctrl + j       - Move to the bottom split
+Ctrl + k       - Move to the top split
+Ctrl + l       - Move to the right split
+======================================================

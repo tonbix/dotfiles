@@ -1,0 +1,113 @@
+[ {
+    "reload_style_on_change": true,
+
+    // bar           //
+    // configuration //
+
+    "layer": "top",
+    "position": "top",
+    "height": 18,
+    "spacing": 6,
+    "margin": "6 6 0 6",
+
+    // modules //
+    // order   //
+
+    "modules-left": ["hyprland/workspaces", "hyprland/window"],
+    "modules-center": [],
+    "modules-right": ["tray", "idle_inhibitor", "bluetooth", "network", "temperature", "hyprland/language", "wireplumber", "battery", "clock"],
+
+    // modules       //
+    // configuration //
+
+    "idle_inhibitor": {
+        "format": "{icon}",
+        "format-icons": {
+            "activated": "INH",
+            "deactivated": "INH"
+        }
+    },
+
+    "tray": {
+        "icon-size": 16,
+        "spacing": 6
+    },
+
+    "clock": {
+        "locale": "ru_RU.UTF-8",
+        "interval": 1,
+        "format": "<b>{:%H:%M:%S}</b>",
+        "format-alt": "<b>{:%d/%m/%y}</b>",
+        "tooltip-format": "<small>{calendar}</small>",
+        "calendar": {
+            "mode":			"year",
+            "mode-mon-col":		2,
+            "weeks-pos":		"right",
+            "on-scroll":		1,
+            "on-click-right":	"mode",
+            "format": {
+                "months":     "<span color='#ffffff'><b>{}</b></span>",
+                            "days":       "<span color='#6f6f6f'>{}</span>",
+                            "weeks":      "<span color='#ffffff'><b>{}</b></span>",
+                            "weekdays":   "<span color='#ffffff'><b>{}</b></span>",
+                            "today":      "<span color='#ffffff'><b>{}</b></span>"
+                        }
+            }
+    },
+
+    "temperature": {
+        "critical-threshold": 80,
+        "format": "{temperature}°C",
+        "format-icons": ["󱃃", "󰔏", "󱃂"]
+    },
+
+    "hyprland/language": {
+        "format": "{}",
+        "format-en": "EN",
+        "format-ru": "RU"
+    },
+
+    "wireplumber": {
+        "format": "{volume}%",
+        "format-muted": "{volume}X",
+        "max-volume": 120
+    },
+
+    "battery": {
+        "interval": 10,
+        "states": {
+        "good": 90,
+            "warning": 20,
+            "critical": 10
+        },
+        "format": "{capacity}-",
+        "format-charging": "{capacity}+",
+        "format-plugged": "{capacity}P"
+    },
+
+    "bluetooth": {
+        "format": "BLON",
+        "format-disabled": "BLOFF",
+        "tooltip-format": "BLDIS",
+        "tooltip-format-connected": "{device_enumerate}",
+        "tooltip-format-enumerate-connected": "{device_alias}\t{device_address}"
+    },
+
+    "network": {
+        "format-wifi": "{essid} ({signalStrength}%)",
+        "format-ethernet": "{ipaddr}/{cidr}",
+        "tooltip-format": "{ifname} via {gwaddr}",
+        "format-linked": "{ifname} (No IP)",
+        "format-disconnected": "disconnected",
+        "on-click": "sudo /usr/local/bin/force-restart-dhcpcd.sh"
+    },
+
+    "custom/media": {
+        "format": "{}",
+        "tooltip-format": "",
+        "exec": "/home/tonbix/.config/scripts/player/nowplaying.sh",
+        "on-click": "playerctl play-pause",
+        "on-click-right": "playerctl next",
+        "restart-interval": 1
+    }
+} ]

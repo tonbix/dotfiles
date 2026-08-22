@@ -1,0 +1,29 @@
+output=HDMI-A-1
+layer=overlay
+
+margin=12
+padding=6
+
+width=350
+height=100
+
+group-by=category
+
+default-timeout=5000
+
+max-history=50
+
+icons=1
+max-icon-size=50
+
+font=HackNerdFontMono 8
+text-color=#EEEEEEFF
+background-color=#000000FF
+border-color=#EEEEEE44
+progress-color=#252525FF
+
+format=<b>%s</b>\n%b
+
+[grouped]
+format=<b>%s</b> (%g)\n%b
+
