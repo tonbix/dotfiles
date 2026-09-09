@@ -1,0 +1,91 @@
+* {
+	font-family: HackNerdFont, HackNerdFontMono, sans-serif;
+	font-size: 9px;
+    transition: 0.02s ease-out 0.001s;
+    min-height: 0;
+    margin: 0;
+    padding: 0;
+}
+
+window#waybar {
+    min-height: 0;
+	background: #000000;
+	color: #aaaaaa;
+}
+
+#workspaces {
+    min-height: 0;
+    padding: 0;
+    margin: 0;
+}
+
+#workspaces button {
+    min-height: 0;
+    min-width: 0;
+	padding: 0 0 0 8px;
+	background: #000000;
+	color: #555555;
+	border: none;
+	border-radius: 0;
+}
+
+#workspaces button:hover {
+	color: #ffffff;
+}
+
+#workspaces button.visible {
+	color: #aeaeae;
+}
+
+#workspaces button.active {
+	color: #eeeeee;
+	font-weight: 700;
+}
+
+#workspaces button.urgent {
+	color: #ed5d5d;
+}
+
+#clock {
+	padding: 0 6px 0 0;
+}
+
+#bluetooth.connected {
+	color: #aaaaff;
+}
+
+#idle_inhibitor {
+	color: #5a5a5a;
+}
+
+#idle_inhibitor.activated {
+	color: #eeeeee;
+}
+
+#custom-media {
+	color: #5a5a5a;
+}
+
+#custom-devider {
+    color: #5a5a5a;
+}
+
+.modules-left > widget:first-child > #workspaces {
+	margin-left: 0;
+}
+
+.modules-right > widget:last-child > #workspaces {
+	margin-right: 0;
+}
+
+#tray > * {
+    opacity: 0.4;
+}
+
+#tray > .passive {
+	-gtk-icon-effect: dim;
+}
+
+#tray > .needs-attention {
+	-gtk-icon-effect: highlight;
+}
