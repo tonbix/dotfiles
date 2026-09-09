@@ -23,8 +23,7 @@
         "idle_inhibitor", "custom/devider",
         "bluetooth", "custom/devider",
         "network", "custom/devider",
-        "hyprland/language", "custom/devider",
-        "wireplumber", "custom/devider",
+        "hyprland/language", "custom/devider", "wireplumber", "custom/devider",
         "clock"
     ],
 
@@ -64,6 +63,13 @@
                             "today":      "<span color='#ffffff'><b>{}</b></span>"
                         }
             }
+    },
+
+    "hyprland/window": {
+        "format": "{}",
+        "rewrite": {
+            "": "desktop"
+        }
     },
 
     "hyprland/language": {
