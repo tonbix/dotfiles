@@ -12,5 +12,5 @@ function set-proxy
 	set -lx HTTPS_PROXY $proxy_url
 	set -lx ALL_PROXY $proxy_url
 
-	eval $argv
+	$argv
 end
