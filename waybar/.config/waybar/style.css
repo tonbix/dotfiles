@@ -9,7 +9,7 @@
 
 window#waybar {
     min-height: 0;
-	background: #000000;
+    background: #000000;
 	color: #aaaaaa;
 }
 
@@ -22,15 +22,19 @@ window#waybar {
 #workspaces button {
     min-height: 0;
     min-width: 0;
-	padding: 0 0 0 8px;
-	background: #000000;
+	padding: 0 4px;
 	color: #555555;
 	border: none;
 	border-radius: 0;
 }
 
+#workspaces button:last-child {
+    padding-right: 0;
+}
+
 #workspaces button:hover {
 	color: #ffffff;
+    background: none;
 }
 
 #workspaces button.visible {

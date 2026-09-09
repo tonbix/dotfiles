@@ -17,7 +17,7 @@
         "hyprland/workspaces", "custom/devider",
         "hyprland/window"
     ],
-    "modules-center": [],
+    "modules-center": [ ],
     "modules-right": [
         "tray", "custom/devider",
         "idle_inhibitor", "custom/devider",
@@ -66,12 +66,6 @@
             }
     },
 
-    "temperature": {
-        "critical-threshold": 80,
-        "format": "{temperature}°C",
-        "format-icons": ["󱃃", "󰔏", "󱃂"]
-    },
-
     "hyprland/language": {
         "format": "{}",
         "format-en": "ENG",
@@ -109,8 +103,7 @@
         "format-ethernet": "{ipaddr}/{cidr}",
         "tooltip-format": "{ifname} via {gwaddr}",
         "format-linked": "{ifname} (No IP)",
-        "format-disconnected": "disconnected",
-        "on-click": "sudo /usr/local/bin/force-restart-dhcpcd.sh"
+        "format-disconnected": "disconnected"
     },
 
     "custom/media": {
