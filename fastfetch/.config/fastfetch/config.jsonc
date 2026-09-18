@@ -4,6 +4,11 @@
     "logo": {
         "type": "small"
     },
+//    "logo": {
+//        "type": "kitty",
+//        "height": 12,
+//        "source": "~/Pictures/ikona.png"
+//    },
     "display": {
         "separator": "",
         "key": {
