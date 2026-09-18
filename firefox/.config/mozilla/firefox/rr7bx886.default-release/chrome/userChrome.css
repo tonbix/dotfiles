@@ -1,0 +1,106 @@
+/* to remove elements you can use keybinds with, uncomment the line below */
+/* @import "powerUser.css"; */
+
+/* changed tabs */
+
+.titlebar-spacer{
+  display: none;
+}
+
+.titlebar-buttonbox-container{
+  margin-right: 4px !important;
+}
+
+#tabbrowser-tabs{
+  padding: 3px !important;
+  margin-left: 2px !important;
+  margin-right: 2px !important;
+}
+
+:root {
+  --tab-min-height: 20px !important;
+  --tab-max-height: 20px !important;
+
+	/* GREEN */
+	--tab-group-color-green:			#007700 !important;
+	--tab-group-color-green-invert:		#8adf8d !important;
+	--tab-group-color-green-pale:		#011401 !important;
+
+	/* RED */
+	--tab-group-color-red:				#b20037 !important;
+	--tab-group-color-red-invert:		#ffa0aa !important;
+	--tab-group-color-red-pale:			#1a0202 !important;
+
+	/* BLUE */
+	--tab-group-color-blue:				#0053cb !important;
+	--tab-group-color-blue-invert:		#84c6ff !important;
+	--tab-group-color-blue-pale:		#020a1a !important;
+
+	/* ORANGE */
+	--tab-group-color-orange:			#ae2000 !important;
+	--tab-group-color-orange-invert:	#ffb57a !important;
+	--tab-group-color-orange-pale:		#1a0e02 !important;
+
+	/* PURPLE */
+	--tab-group-color-purple:			#8627a8 !important;
+	--tab-group-color-purple-invert:	#eaabff !important;
+	--tab-group-color-purple-pale:		#11021a !important;
+
+	/* CYAN */
+	--tab-group-color-cyan:				#007792 !important;
+	--tab-group-color-cyan-invert:		#61dce9 !important;
+	--tab-group-color-cyan-pale:		#021a1a !important;
+
+	/* YELLOW */
+	--tab-group-color-yellow:			#985500 !important;
+	--tab-group-color-yellow-invert:	#f5cc58 !important;
+	--tab-group-color-yellow-pale:		#1a1702 !important;
+
+	/* PINK */
+	--tab-group-color-pink:				#ad0059 !important;
+	--tab-group-color-pink-invert:		#ff9fc3 !important;
+	--tab-group-color-pink-pale:		#1a0213 !important;
+
+	/* GRAY */
+	--tab-group-color-gray:				#5e6a77 !important;
+	--tab-group-color-gray-invert:		#99a6b4 !important;
+	--tab-group-color-gray-pale:		#0d0d0d !important;
+}
+
+.tab-close-button{
+  height: 15px !important;
+  width: 15px !important;
+  padding: 2px !important;
+}
+
+.tab-throbber-tabslist, .tab-throbber, .tab-icon-pending, .tab-icon-image, .tab-sharing-icon-overlay, .tab-icon-overlay {
+    height: 14px !important;
+    width: 14px !important;
+}
+
+#urlbar-input {
+  height: 15px !important;
+}
+
+#urlbar{
+  min-height: 23px !important;
+}
+
+#nav-bar > .toolbarbutton-1{
+  padding: 0px !important;
+}
+
+.urlbar-page-action{
+  padding-top: 0px !important;
+  padding-bottom: 0px !important;
+}
+
+.notification-anchor-icon{
+  padding-top: 0px !important;
+  padding-bottom: 0px !important;
+}
+
+.bookmark-item{
+  padding-top: 1px !important;
+  padding-bottom: 1px !important;
+}
