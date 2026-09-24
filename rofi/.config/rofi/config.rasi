@@ -110,7 +110,7 @@ scrollbar {
 configuration {
 	modes: "drun,ssh";
 	font: "HackNerdFontMono 9px";
-	location: 0;
+	location: 7;
 	yoffset: 24;
 /*	xoffset: 0;*/
 /*	fixed-num-lines: true;*/
