@@ -1,6 +1,6 @@
 * {
 	background-color: transparent;
-	text-color: white;
+	text-color: #aaaaaa;
 	border: none;
 	padding: 0;
 	margin: 0;
@@ -9,9 +9,9 @@
 window {
 	background-color: black;
 	border: none;
-	margin: 6px 0 0 0;
-	padding: 6px 6px 10px 10px;
-	width: 400px;
+	margin: 6px;
+	padding: 3px 3px 3px 3px;
+	width: 200px;
 	children: [wrap, listview-split];
 	spacing: 3px;
 
@@ -29,7 +29,7 @@ wrap {
 	orientation: vertical;
 	children: [inputbar, message];
 	background-color: transparent;
-	border-color: white;
+	border-color: #aaaaaa;
 	border: none;
 }
 
@@ -42,21 +42,21 @@ icon-ib {
 }
 
 inputbar {
-	text-color: white;
+	text-color: #aaaaaa;
 }
 
 prompt {
-	text-color: white;
+	text-color: #aaaaaa;
 }
 
 prompt {
-	text-color: white;
+	text-color: #aaaaaa;
 }
 
 entry {
 	placeholder: "...";
 	placeholder-color: gray;
-	text-color: white;
+	text-color: #aaaaaa;
 }
 
 message {
@@ -68,14 +68,14 @@ message {
 }
 
 textbox {
-	color: white;
+	color: #aaaaaa;
 }
 
 listview {
 	flow: horizontal;
 	fixed-columns: true;
 	columns: 1;
-	lines: 5;
+	lines: 20;
 	spacing: 3px;
 	
 	border: none;
@@ -88,12 +88,12 @@ element {
 
 element.normal.normal, element.alternate.normal {
 	background-color: transparent;
-	text-color: white;
+	text-color: #aaaaaa;
 }
 
 element.selected.normal {
-	background-color: white;
-	text-color: black;
+	background-color: transparent;
+    color: white;
 }
 
 scrollbar {
@@ -101,7 +101,7 @@ scrollbar {
 
 	width: 0px;
 	background-color: transparent;
-	handle-color: white;
+	handle-color: #aaaaaa;
 	handle-width: 0px;
 	padding: 0;
 	margin: 0;
@@ -109,8 +109,8 @@ scrollbar {
 
 configuration {
 	modes: "drun,ssh";
-	font: "HackNerdFontMono 12px";
-	location: 2;
+	font: "HackNerdFontMono 9px";
+	location: 0;
 	yoffset: 24;
 /*	xoffset: 0;*/
 /*	fixed-num-lines: true;*/
