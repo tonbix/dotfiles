@@ -4,7 +4,7 @@ if [ $1 == "output" ]; then
 	OUTPUT=$(hyprctl -j activeworkspace | jq -r ".monitor")
 	grim -o $OUTPUT -c $SCREENSHOT_PATH
 elif [ $1 == "selection" ]; then
-	wayfreeze & PID=$!
+	wayfreeze --inverse-transform & PID=$!
 
 	trap "kill $PID 2>/dev/null" EXIT
 

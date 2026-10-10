@@ -1,10 +1,11 @@
 output=HDMI-A-1
 layer=overlay
+anchor=bottom-right
 
-margin=12
-padding=6
+margin=-1
+padding=3,6
 
-width=350
+width=250
 height=100
 
 group-by=category
@@ -16,10 +17,11 @@ max-history=50
 icons=1
 max-icon-size=50
 
-font=HackNerdFontMono 8
-text-color=#EEEEEEFF
+font=HackNerdFontMono 7
+text-color=#aaaaaaff
 background-color=#000000FF
-border-color=#EEEEEE44
+border-size=1
+border-color=#ffffff0f
 progress-color=#252525FF
 
 format=<b>%s</b>\n%b

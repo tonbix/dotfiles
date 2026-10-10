@@ -8,8 +8,9 @@
 
 window {
 	background-color: black;
-	border: none;
-	margin: 6px;
+    border: 1px 1px 0 0;
+    border-color: #ffffff1f;
+	margin: 0;
 	padding: 3px 3px 3px 3px;
 	width: 200px;
 	children: [wrap, listview-split];
