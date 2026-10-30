@@ -23,3 +23,5 @@ rofi/.config/rofi/cache/
 fish_variables
 *.db
 *.sqlite
+
+set-proxy.fish
