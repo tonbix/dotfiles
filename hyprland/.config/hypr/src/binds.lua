@@ -5,7 +5,7 @@ hl.bind(mainMod .. " + E", hl.dsp.exec_cmd("rofi -modi emoji -show emoji"), { re
 
 hl.bind(mainMod .. " + Return", hl.dsp.exec_cmd("kitty"))
 
-hl.bind(mainMod .. " + Super_L", hl.dsp.exec_cmd("pkill rofi || rofi -show drun"))
+hl.bind(mainMod .. " + Super_L", hl.dsp.exec_cmd("pkill rofi || rofi -show drun"), { release = true })
 hl.bind(mainMod .. " + R", hl.dsp.exec_cmd("pkill rofi || rofi -show run"))
 
 hl.bind(mainMod .. " + SHIFT + L", hl.dsp.exec_cmd("hyprlock"))
