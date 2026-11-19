@@ -1,0 +1,7 @@
+[cover]
+providers = ["metadata", "local", "catbox"]
+
+[cover.providers.catbox]
+use_litter = true
+litter_hours = 24
+
