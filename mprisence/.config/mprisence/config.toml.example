@@ -1,6 +1,7 @@
-[cover]
-providers = ["metadata", "local", "imgbb"]
+[cover.provider]
+provider = ["imgbb"]
 
 [cover.provider.imgbb]
 api_key = ""
+expiration = 2592000
 
