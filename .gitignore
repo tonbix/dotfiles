@@ -25,3 +25,6 @@ fish_variables
 *.sqlite
 
 set-proxy.fish
+
+mprisence/.config/mprisence/config.toml
+

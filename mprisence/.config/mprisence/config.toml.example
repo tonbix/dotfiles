@@ -1,0 +1,6 @@
+[cover]
+providers = ["metadata", "local", "imgbb"]
+
+[cover.provider.imgbb]
+api_key = ""
+
