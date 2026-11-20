@@ -41,17 +41,6 @@ elif [ $1 == "activewindow" ]; then
 		notify-send -u low "screenshot aborted" "no active window" -i None
 		exit
 	fi
-elif [ $1 == "activewindow" ]; then
-	GEOMETRY=$(hyprctl -j activewindow | jq -r '"\(.at[0]),\(.at[1]) \(.size[0])x\(.size[1])"')
-
-	if [ "$GEOMETRY" != "null,null nullxnull" ]; then
-		echo "screenshoted"
-		grim -c -g "$GEOMETRY" $SCREENSHOT_PATH
-	else
-		echo "screenshot aborted: no active window"
-		notify-send -u low "screenshot aborted" "no active window" -i None
-		exit
-	fi
 else
 	echo "Unrecognized parameter: ${1}"
 	echo "Usage should be: screenshot.sh <output|selection|activewindow>"
